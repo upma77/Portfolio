@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upama Kumari | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div id="vanta-bg"></div>
+
+  <div class="container">
+    <header>
+      <h2 class="tag">About me</h2>
+      <div class="intro">
+        <div class="text">
+          <h1>Hi — My name is <span>Upama Kumari</span></h1>
+          <p>
+            I'm a B.Tech Computer Science student specializing in Data Science, with a strong foundation in Python, statistics, and machine learning. 
+            I enjoy working on real-world problems through data-driven solutions. 
+            I’ve completed projects and internships that helped me develop both technical and communication skills, 
+            and I’m always eager to learn, collaborate, and take on new challenges. 
+            Currently looking for opportunities to apply my skills in tech internships, research projects, and hackathons.
+          </p>
+          <p class="objective">
+            My objective: Challenge myself in a new environment to learn, develop, improve my skills and contribute more to the company with my abilities.
+          </p>
+
+          <div class="contact">
+            <a href="mailto:upmad284@gmail.com" target="_blank" class="contact-link email">
+              <i class="fas fa-envelope"></i> upmad284@gmail.com
+            </a>
+
+            <a href="tel:+917856003056" target="_blank" class="contact-link phone">
+              <i class="fas fa-phone"></i> +91 7856003056
+            </a>
+
+            <a href="https://www.linkedin.com/in/upama-kumari-653168329" target="_blank" class="contact-link linkedin">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+
+            <a href="https://github.com/upma77" target="_blank" class="contact-link github">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+
+            <!-- Resume Button -->
+            <a href="Resume.pdf" target="_blank" class="contact-link resume">
+              <i class="fas fa-file-pdf"></i> View Resume
+            </a>
+          </div>
+        </div>
+
+        <div class="photo-frame">
+          <img src="image.jpg" alt="Profile photo">
+        </div>
+      </div>
+    </header>
+
+    <section class="skills">
+      <div>
+        <h3>Education</h3>
+        <p>2024 – 2028</p>
+        <p>University of Petroleum and Energy Studies</p>
+      </div>
+      <div>
+        <h3>Soft skills</h3>
+        <ul>
+          <li>Teamwork</li>
+          <li>Communication</li>
+          <li>Critical Thinking</li>
+          <li>Time Management</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Technical skills</h3>
+        <ul>
+          <li>HTML | CSS</li>
+          <li>SQL</li>
+          <li>C++</li>
+          <li>Python</li>
+          <li>Flask</li>
+          <li>Bootstraping</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Interests</h3>
+        <p>Book | Technology | Travel</p>
+      </div>
+      <div>
+        <h3>Languages</h3>
+        <p>English | Hindi</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- VANTA.js background -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+
+  <script>
+    let vantaEffect;
+    vantaEffect = VANTA.GLOBE({
+      el: "#vanta-bg",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x6ee7ff,
+      color2: 0x9f7aea,
+      backgroundColor: 0x1c1924,
+      size: 1.2,
+      spacing: 18.0
+    });
+
+    window.addEventListener("resize", () => {
+      if (vantaEffect) {
+        vantaEffect.resize();
+      }
+    });
+  </script>
+</body>
+</html>

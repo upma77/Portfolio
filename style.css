@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  line-height: 1.6;
+}
+
+#vanta-bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px;
+  position: relative;
+}
+
+header .tag {
+  display: inline-block;
+  background: linear-gradient(90deg, #9f7aea, #6ee7ff);
+  padding: 6px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.intro .text {
+  flex: 2;
+  padding-right: 20px;
+}
+
+.intro h1 span {
+  color: #9f7aea;
+  font-weight: bold;
+}
+
+.intro .objective {
+  font-style: italic;
+  margin-top: 15px;
+  opacity: 0.9;
+}
+
+.contact {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-link {
+  font-size: 18px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.contact-link i {
+  font-size: 22px;
+}
+
+.contact-link.email i { color: #EA4335; }
+.contact-link.phone i { color: #34A853; }
+.contact-link.linkedin i { color: #0077b5; }
+.contact-link.github i { color: #fff; }
+
+.contact-link:hover {
+  transform: translateX(5px);
+  opacity: 0.9;
+}
+
+/* Resume button */
+.contact-link.resume {
+  font-weight: bold;
+  padding: 10px 15px;
+  border: 2px solid #ff4b5c;
+  border-radius: 8px;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.contact-link.resume i {
+  color: #ff4b5c;
+}
+
+.contact-link.resume:hover {
+  background: #ff4b5c;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.photo-frame img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.skills h3 {
+  color: #ff7aea;
+  margin-bottom: 10px;
+}
+
+.skills ul {
+  list-style: none;
+}
+
+.skills ul li {
+  margin: 5px 0;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+  font-size: 22px;
+}
